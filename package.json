@@ -2,7 +2,12 @@
   "name": "fake-chrome-extension",
   "version": "0.0.1",
   "description": "Extension for reporting fake news, propaganda and other suspicious content",
-  "main": "popup.js",
+  "author": {
+    "name": "Anton Karpenko",
+    "email": "i@karpolan.com",
+    "url": "https://karpolan.com"
+  },
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,10 +20,9 @@
     "extension",
     "report"
   ],
-  "author": "KARPOLAN",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/DEZATROOPER/fake-chrome-extension/issues"
   },
-  "homepage": "https://github.com/DEZATROOPER/fake-chrome-extension#readme"
+  "homepage": "https://github.com/DEZATROOPER/fake-chrome-extension#readme",
+  "main": "popup.js"
 }
