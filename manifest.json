@@ -1,0 +1,13 @@
+{
+  "name": "Fake Reporting Tool",
+  "description": "Extension for reporting fake news, propaganda and other suspicious content",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "action": {
+    "default_title": "Fake Reporting Tool",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+}
