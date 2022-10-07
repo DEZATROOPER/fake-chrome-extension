@@ -1,0 +1,24 @@
+{
+  "name": "fake-chrome-extension",
+  "version": "0.0.1",
+  "description": "Extension for reporting fake news, propaganda and other suspicious content",
+  "main": "popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DEZATROOPER/fake-chrome-extension.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "report"
+  ],
+  "author": "KARPOLAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DEZATROOPER/fake-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/DEZATROOPER/fake-chrome-extension#readme"
+}
