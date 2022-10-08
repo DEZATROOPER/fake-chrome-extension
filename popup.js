@@ -1,4 +1,4 @@
-let inputWebsite = document.getElementById('website');
+let inputUrl = document.getElementById('url');
 let inputMessage = document.getElementById('message');
 let buttonReport = document.getElementById('btnReport');
 
@@ -7,12 +7,24 @@ async function getCurrentTabUrl2() {
   return tabs[0].url;
 }
 
-function onReportButtonClick() {
-  let website = inputWebsite.value;
+async function onReportButtonClick() {
+  let url = inputUrl.value;
   let message = inputMessage.value;
-  console.log('Reporting:', website, 'Message:', message);
 
-  // TODO: Call API with .website and .message parameters
+  try {
+    await fetch(
+      'https://dezatrooper-default-rtdb.europe-west1.firebasedatabase.app/urls.json',
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          url,
+          message,
+        }),
+      }
+    );
+  } catch (error) {
+    alert('Error occurs:' + error.message);
+  }
 
   window.close(); // Close the popup.
 }
@@ -24,5 +36,5 @@ function onReportButtonClick() {
 buttonReport.onclick = onReportButtonClick;
 
 chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
-  inputWebsite.value = tabs[0].url;
+  inputUrl.value = tabs[0].url;
 });
